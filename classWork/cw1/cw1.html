@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cw1</title>
+
+</head>
+<body>
+
+</body>
+<script>
+
+    // 1. Створити масив з 10 чисел (можна використовувати Math.random Та Math.floor). Скласти результат цих чисел в змінній result
+    let n1 = Math.random();
+    let n2 = Math.random();
+    let n3 = Math.random();
+    let n4 = Math.random();
+    let n5 = Math.random();
+    let n6 = Math.random();
+    let n7 = Math.random();
+    let n8 = Math.random();
+    let n9 = Math.random();
+    let n10 = Math.random();
+    let arr = [n1, n2, n3, n4, n5, n6, n7, n8, n9, n10]
+    result = n1 + n2 + n3 + n4 + n5 + n6 + n7 + n8 + n9 + n10;
+    console.log(arr)
+    console.log(result)
+    // 2. Створити об'єкт book з наступними полями  - назва, кількість сторінок, жанр
+    let bookOne =
+
+        {
+            NameBook: 'GarryPotter',
+            CountPage: '100',
+            genre: 'adventure'
+        }
+    ;
+    console.log(bookOne);
+    // 3. Створити об'єкт book з наступними полями  - назва, кількість сторінок, жанр, автори
+
+    let bookTwo =
+
+        {
+            NameBook: 'GarryPotter',
+            CountPage: '100',
+            genre: 'Adventure',
+            author: 'Rouling'
+        }
+    ;
+    console.log(bookTwo);
+    // 4. Створити маис об'єктів book з наступними полями  - назва, кількість сторінок, жанр, автори. Вивести кожну книгу як окремий об'єкт
+    let book = [
+        {
+            NameBook: 'GarryPotter',
+            CountPage: '100',
+            genre: 'Adventure',
+            author: 'Rouling'
+
+        },
+        {
+            NameBook: 'Mathematic',
+            CountPage: '200',
+            genre: 'Science',
+            author: 'Merzlyak'
+
+        },
+        {
+            NameBook: 'Source',
+            CountPage: '900',
+            genre: 'Adventure',
+            author: 'Den Braun'
+        }
+    ]
+    console.log(book[0]);
+    console.log(book[1]);
+    console.log(book[2]);
+    // 5. Напишіть код, який вираховує площу прямокутника висотою 23см. (змінна height) та шириною 10см (змінна width).
+    // Значення площі зберігати в змінній s.
+    let HeightRectangle = 23;
+    let WidthRectangle = 10;
+    let s;
+    s = HeightRectangle * WidthRectangle;
+    console.log(s);
+
+    // 6. Напиши код, який знаходить об'єм циліндра заввишки 10м (змінна heightC) та діаметром основи 4м (dC),
+    // результат помістіть у змінну v.
+    let heightC = 10;
+    let dC = 4;
+    const Pi = 3.14;
+    let v;
+    v = Pi * Math.pow((dC / 2), 2) * heightC;
+    console.log(v)
+    // 7. У прямокутного трикутника дві сторони n (зі значенням 3) та m (зі значенням 4).
+    // Знайдіть гіпотенузу k за теоремою Піфагора (потрібно використовувати функцію Math.pow (число, ступінь) або оператор зведення в ступінь **).
+    let n = 3;
+    let m = 4;
+    let k;
+    k = Math.sqrt(Math.pow(n,2) + Math.pow(m,2));
+    console.log(k);
+
+</script>
+</html>
