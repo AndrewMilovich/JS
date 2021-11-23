@@ -32,28 +32,28 @@
 //     [{name: 'Dima', age: 13}, {model: 'Camry'}]  ===> [ name, age, model ]
 
 
-function arrKey(user) {
-    for (const userElement of user) {
-        for (const userKey in userElement) {
-            console.log(userKey);
-        }
-    }
-}
+// function arrKey(user) {
+//     for (const userElement of user) {
+//         for (const userKey in userElement) {
+//             console.log(userKey);
+//         }
+//     }
+// }
 
-let user = [{name: 'Dima', age: 13}, {model: 'Camry'}];
-arrKey(user)
+
+
 
 // - Створити функцію яка приймає масив будь яких объектів, та повертає масив значень всіх обєктів
 // EXAMPLE:
 //     [{name: 'Dima', age: 13}, {model: 'Camry'}]  ===> [ Dima, 13, Camry ]
 
 
-function arrObject(user) {
-    for (const userElement of user) {
-        for (const userKey in userElement) {
-            console.log(userElement[userKey]);
+function arrObject(arg) {
+    for (const userElement of arg) {
+        for (const Key in userElement) {
+            console.log(userElement[Key]);
         }
     }
 }
-
-arrObject(user)
+let inr = [{name: 'vasya', age: 13}, {model: 'Camry'}];
+arrObject(inr)
