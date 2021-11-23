@@ -45,20 +45,17 @@ document.write(`<div></div>`)
 // [0,1,2,3,4] => [1,2,3,4,0]
 // [0,0,1,0]   => [1,0,0,0]
 let transit = (arr) => {
-    let  k=0;
-        for (let i = 0; i < arr.length; i++) {
-            if(arr[i] !==0)
-            {
-                let temp=arr[i];
-                arr[i]=arr[k];
-                arr[k]=temp;
-                k++;
-            }
-
+    for (let i = 0, k = 0; i < arr.length; i++) {
+        if (arr[i] !== 0) {
+            let temp = arr[i];
+            arr[i] = arr[k];
+            arr[k] = temp;
+            k++;
+        }
     }
-document.write(`${arr}`)
+    document.write(`${arr}`)
 }
-let arrEx=[1,0,6,0,3];
+let arrEx = [0, 0, 1, 0]
 transit(arrEx)
 
 
