@@ -53,27 +53,28 @@ let arrSum = (arr) => {
     for (const arrElement of arr) {
         sum += arrElement;
     }
-    document.write(`<div></div>`)
-    document.write(` ${sum}`)
+    document.write(`<div></div>`);
+    document.write(` ${sum}`);
 }
 arrSum(arrEx)
 // - створити функцію яка приймає масив чисел та повертає середнє арифметичне його значень.
 let arrSer = (arr) => {
     let ser = 0;
     for (let arrElement of arr) {
-        ser += arrElement / arr.length;
+        ser += arrElement ;
     }
-    document.write(`<div></div>`)
-    document.write(` ${ser}`)
+  let  result=ser/arr.length
+    document.write(`<div></div>`);
+    document.write(` ${result}`);
 }
 
 
 arrSer(arrEx);
-document.write(`<div></div>`)
+document.write(`<div></div>`);
 // - створити функцію яка приймає будь-яку кількість чисел, повертає найменьше, а виводить найбільше (Math використовувати заборонено);
 let arrCount = (arr) => {
-    let min = arr[0]
-    let max = arr[0]
+    let min = arr[0];
+    let max = arr[0];
     for (let i = 0; i < arr.length; i++) {
         if (arr[i] < min) {
             min = arr[i]
@@ -82,49 +83,49 @@ let arrCount = (arr) => {
             max = arr[i]
         }
     }
-    document.write(`${max}`)
+    document.write(`${max}`);
     return min;
 }
 arrCount(arrEx);
-document.write(`<div></div>`)
+document.write(`<div></div>`);
 // - створити функцію яка заповнює масив рандомними числами
 let arrRandom = (arr) => {
-    let array = []
+    let array = [];
     for (let i = 0; i < arr; i++) {
         array[i] = Math.random();
     }
-    document.write(`${array}`)
+    document.write(`${array}`);
 }
-arrRandom(4)
-document.write(`<div></div>`)
+arrRandom(4);
+document.write(`<div></div>`);
 // (цей код генерує рандомні числа в діапазоні від 0 до 100 - Math.round(Math.random()*100)) та виводить його.
 let arrRandomHundred = (arr) => {
-    let array = []
+    let array = [];
     for (let i = 0; i < arr; i++) {
         array[i] = Math.round(Math.random() * 100);
     }
-    document.write(`${array}`)
+    document.write(`${array}`);
 }
 arrRandomHundred(4)
 
 // - створити функцію яка заповнює масив рандомними числами в діапазоні від 0 до limit. limit - аргумент, який характеризує кінцеве значення діапазону.
 document.write(`<div></div>`)
 let arrRandomLimit = (arr, limit) => {
-    let array = []
+    let array = [];
     for (let i = 0; i < arr; i++) {
         array[i] = Math.round(Math.random() * limit);
     }
-    document.write(`${array}`)
+    document.write(`${array}`);
 }
 arrRandomLimit(4, 50)
-document.write(`<div></div>`)
-// - Функція приймає масив та робить з нього новий масив в зворотньому порядку. [1,2,3] -> [3, 2, 1].
+document.write(`<div></div>`);
+// - Функція приймає масив та р;обить з нього новий масив в зворотньому порядку. [1,2,3] -> [3, 2, 1].
 let arrReverse = (arr) => {
     let array=[];
     for (let i = arr.length-1; i >=0 ; i--) {
-        array.push(arr[i])
+        array.push(arr[i]);
     }
-    document.write(`${array}`)
+    document.write(`${array}`);
 }
-let arrExample=[234,23,4,5]
-arrReverse(arrExample)
+let arrExample=[234,23,4,5];
+arrReverse(arrExample);
