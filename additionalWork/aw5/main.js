@@ -59,11 +59,3 @@ let arrEx = [0, 0, 1, 0,5,8,7,0,0]
 transit(arrEx)
 //
 
-let stringC= (string) => {
-
-    for (let i = 0; i < 10; i++) {
-
-    }
-
-}
-stringC()
