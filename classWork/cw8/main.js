@@ -3,6 +3,10 @@
 // a) змінює клас  тексту елемнту з ід main_header на назву групи в якій ви вчитесь (mon-year)
 let elementById = document.getElementById('main_header');
 elementById.classList.add('mon-year')
+let elementsByClassName = document.getElementsByClassName('mon-year');
+for (const elementsByClassNameElement of elementsByClassName) {
+    elementsByClassNameElement.style.color='red';
+}
 // b) робить шириниу елементу ul 400px
 for (const elementsByTagNameElement of document.getElementsByTagName('ul')) {
     elementsByTagNameElement.style.width='400px'
