@@ -96,23 +96,23 @@ let users = [{
 // document.body.append(usersDiv)
 // - За допомоги циклу проітерувати  масив users, записати кожного юзера в сівй блок за допомоги
 // document.createElement, розділивши всі властивості по своїм блокам , блок з адресою зробити окремим блоком, з блоками для кожної властивості
-
-let usersDiv = document.createElement("div");
-for (const user of users) {
-
-    let userDiv = document.createElement("div");
-    for (const userKey in user) {
-        let userKey = document.createElement("div");
-        userDiv.append(userKey)
-        for (const userKeyE in users.address){
-            let userKeyAddress = document.createElement("div");
-            console.log(userKeyE)
-            userKey.append(userKeyAddress)
-        }
-    }
-    usersDiv.append(userDiv)
-}
-document.body.append(usersDiv)
+//
+// let usersDiv = document.createElement("div");
+// for (const user of users) {
+//    let divsAddress=document.createElement("div");
+//     let userDiv = document.createElement("div");
+//     for (const userKey in user) {
+//         let userKey = document.createElement("div");
+//         userDiv.append(userKey)
+//         for (const userElement in user.address) {
+//             let divAdress = document.createElement("div");
+//             divsAddress.appendChild(divAdress)
+//         }
+// userDiv.appendChild(divsAddress)
+//     }
+//     usersDiv.append(userDiv)
+// }
+// document.body.append(usersDiv)
 
 
 
