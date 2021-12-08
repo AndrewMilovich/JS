@@ -54,39 +54,39 @@
 
 
 // - Создайте меню, которое раскрывается/сворачивается при клике
-// let divMenu = document.createElement('div');
-// let buttonMenu = document.createElement('Menu');
-// buttonMenu.innerText='Menu';
-// buttonMenu.style.height='30px'
-// buttonMenu.style.width='70px'
-// buttonMenu.style.background='red'
-// buttonMenu.style.margin='10px'
-// buttonMenu.style.borderRadius='10px'
-// buttonMenu.style.cursor='pointer'
-// divMenu.classList.add('menu');
-// let ul = document.createElement('ul');
-// let arr=['Product','Act','User','About']
-// for (const string of arr) {
-//     let liElements = document.createElement('li');
-//     liElements.innerText=string;
-//     liElements.style.background='blue';
-//     liElements.style.height='20px';
-//     liElements.style.width='70px';
-//     liElements.style.margin='3px';
-//     liElements.style.borderRadius='10%';
-//     liElements.style.textAlign='center'
-//     ul.append(liElements);
-// }
-// buttonMenu.addEventListener('click',function (){
-//
-//         ul.classList.toggle('hide');
-//
-// })
-// divMenu.append(buttonMenu)
-// divMenu.append(ul)
-// document.body.append(divMenu)
-//
-//
+let divMenu = document.createElement('div');
+let buttonMenu = document.createElement('Menu');
+buttonMenu.innerText='Menu';
+buttonMenu.style.height='30px'
+buttonMenu.style.width='70px'
+buttonMenu.style.background='red'
+buttonMenu.style.margin='10px'
+buttonMenu.style.borderRadius='10px'
+buttonMenu.style.cursor='pointer'
+divMenu.classList.add('menu');
+let ul = document.createElement('ul');
+let arr=['Product','Act','User','About']
+for (const string of arr) {
+    let liElements = document.createElement('li');
+    liElements.innerText=string;
+    liElements.style.background='blue';
+    liElements.style.height='20px';
+    liElements.style.width='70px';
+    liElements.style.margin='3px';
+    liElements.style.borderRadius='10%';
+    liElements.style.textAlign='center'
+    ul.append(liElements);
+}
+buttonMenu.addEventListener('click',function (){
+
+        ul.classList.toggle('hide');
+
+})
+divMenu.append(buttonMenu)
+divMenu.append(ul)
+document.body.append(divMenu)
+
+
 
 
 
