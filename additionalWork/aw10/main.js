@@ -36,8 +36,23 @@ input3.style.height='30px'
 
 div.append(input1,input2,input3)
 document.body.append(div)
-for (let user of usersWithAddress) {
-if (input1){
-   
+input1.onclick=function () {
+        if (this.checked) {
+            let filterStatus = usersWithAddress.filter((value) => value.status === false);
+            for (const filterStatus1 of filterStatus) {
+                document.write(`Name:${filterStatus1.name}   age:${filterStatus1.age}    status:${filterStatus1.status}   address:${filterStatus1.address.city}  ${filterStatus1.address.street}  `)
+                document.write(`<div></div>`)
+            }
+        } else
+            console.log('idi')
 }
+input2.onclick=function () {
+    if (this.checked) {
+       usersWithAddress.filter((value) => value.age >=29)
+    }
+}
+input3.onclick=function () {
+    if (this.checked) {
+        console.log(usersWithAddress.filter((value) => value.address.city ==='Kyiv'))
+    }
 }

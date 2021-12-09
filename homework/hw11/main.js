@@ -40,5 +40,4 @@ btn.onclick=function (e) {
    e.preventDefault();
     let arr=[model.value,type.value,volume.value];
     localStorage.setItem('Car' , JSON.stringify(arr));
-
 }
