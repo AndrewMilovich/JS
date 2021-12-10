@@ -7,15 +7,13 @@ fetch(`https://jsonplaceholder.typicode.com/posts`)
         for (const post of posts) {
             let div = document.createElement("div");
             div.classList.add('styleUsers');
-            let id = document.createElement('div');
             let title = document.createElement('h2');
-            id.innerText = post.id;
-            title.innerText = post.title;
+            title.innerText = `${post.id} ${post.title}`;
             let button = document.createElement('button');
             button.innerText = 'Show Post';
             button.style.margin = '20px';
             let p = document.createElement('p');
-            div.append( id, title, button,p);
+            div.append(title, button,p);
             button.onclick = function () {
 
                 p.innerText = post.body;
