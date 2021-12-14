@@ -11,6 +11,7 @@ fetch(`https://jsonplaceholder.typicode.com/users`)
             h.innerHTML = `${user.id} - ${user.name} - ${user.email}`;
             let buttonPost = document.createElement("button");
             buttonPost.innerText = 'Show Post User';
+
             buttonPost.onclick = function (id) {
                 fetch('https://jsonplaceholder.typicode.com/users/' + user.id + '/posts')
                     .then(post => post.json())
