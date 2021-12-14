@@ -7,8 +7,9 @@
     transition: .3s;
     cursor: pointer;
 }
-.product {
 
+
+.product {
     display: flex;
     flex-direction: column;
     border: 1px solid black;
@@ -16,6 +17,10 @@
    padding: 20px;
     align-items: center;
     border-radius: 10px;
+
+}
+.hide{
+    display: none;
 
 }
 .main{

@@ -10,16 +10,19 @@ for (const parseElement of parse) {
         <img class="imageProduct" src=${parseElement.img} alt="">
         <h3>к-сть: ${parseElement.count}</h3>
         <h3>ціна: ${parseElement.price}</h3>
-<button class="buttonDelete">Видалити</button>
 `
-    main.append(listDiv)
-    let buttonDelete = document.getElementsByClassName('buttonDelete');
-    for (const buttonDeleteElement of buttonDelete) {
-        buttonDeleteElement.onclick = function (e) {
-          
-        }
+    let buttonDelete = document.createElement("button");
+    buttonDelete.innerText = 'Delete'
+    buttonDelete.onclick = function (e) {
+        const index = parse.findIndex(value => value.id === parseElement.id);
+        parse.splice(index, 1);
+        localStorage.setItem('product', JSON.stringify(parse));
+listDiv.classList.add('hide');
     }
+    listDiv.append(buttonDelete)
+    main.append(listDiv)
 }
+
 document.body.append(main);
 
 let allDelete = document.createElement("button");
@@ -27,6 +30,6 @@ allDelete.innerText = 'Delete all';
 allDelete.classList.add('btnDelete');
 allDelete.onclick = function () {
     localStorage.removeItem('product')
-main.style.display='none'
+    main.style.display = 'none'
 }
 document.body.append(allDelete)
